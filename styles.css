@@ -12,9 +12,18 @@
     justify-content: center;
 }
 
+a {
+    color: violet;
+    text-decoration: none;
+}
+
+a:hover {
+    color: violet;
+    text-decoration: underline;
+}
+
 .header-links a {
     font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
     color: var(--text-light);
     margin: 0 20px !important;
 }
@@ -71,10 +80,22 @@ h2 {
 
 .about-section {
     text-align: center;
-    padding-top: 50px;
+    margin-top: 80px;
 }
 
 .about-section p {
-    width: 50%;
+    font-size: 16px;
+    width: 60%;
     margin: 0 auto;
+}
+
+
+.hopeful-doomer {
+    font-family: 'Circular', sans-serif;
+    /* Bold */
+    font-size: 32px;
+    margin-top: 160px;
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
 }
