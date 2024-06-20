@@ -4,6 +4,46 @@
     --text-paragraph: #b4bfca;
     --gray-primary: #161616;
     --gray-secondary: #101010;
+
+    /* Colours for tile merge game */
+    --empty-tile: #38344A;
+    --board-outline: #292634;
+    --dark-tile-text: #29293d;
+    --light-tile-text: white;
+    --x2: #efe3dc;
+    --x4: #e4cab4;
+    --x8: #f2946d;
+    --x16: #f47467;
+    --x32: #f4564f;
+    --x64: #f52b28;
+    --x128: #ebb563;
+    --x256: #ebaf54;
+    --x512: #eba740;
+    --x1024: #ea9d1c;
+    --x2048: #fd2a4a;
+    --x4096: #fe0a2f;
+    --x8192: #fe0a2f;
+
+    /* Original colours
+    --empty-tile: #cdc1b5;
+    --board-outline: #bbada0;
+    --dark-tile-text: #727371;
+    --light-tile-text: white;
+    --x2: #eee4da;
+    --x4: #ece0ca;
+    --x8: #f4b17a;
+    --x16: #f59575;
+    --x32: #f57c5f;
+    --x64: #f65d3b;
+    --x128: #edce71;
+    --x256: #edcc63;
+    --x512: #edc651;
+    --x1024: #eec744;
+    --x2048: #ecc230;
+    --x4096: #fe3d3d;
+    --x8192: #ff2020;
+*/
+
 }
 
 
@@ -12,12 +52,16 @@
     justify-content: center;
 }
 
-a {
+.img-link {
+    text-decoration: none;
+}
+
+.custom-a {
     color: violet;
     text-decoration: none;
 }
 
-a:hover {
+.custom-a:hover {
     color: violet;
     text-decoration: underline;
 }
@@ -26,6 +70,7 @@ a:hover {
     font-family: 'Montserrat', sans-serif;
     color: var(--text-light);
     margin: 0 20px !important;
+    text-decoration: none;
 }
 
 .header-links a:hover {
@@ -52,12 +97,19 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    padding: 15px 0;
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+}
 
 body {
     background-color: var(--gray-primary);
     color: var(--text-light);
+    /* Padding for height of footer */
+    padding-bottom: 72px;
 }
 
 p {
@@ -80,7 +132,7 @@ h2 {
 
 .about-section {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 200px;
 }
 
 .about-section p {
@@ -92,10 +144,128 @@ h2 {
 
 .hopeful-doomer {
     font-family: 'Circular', sans-serif;
-    /* Bold */
-    font-size: 32px;
-    margin-top: 160px;
+    margin-top: 250px;
     font-size: 5em;
     font-weight: bold;
     text-align: center;
+}
+
+.gallery {
+    margin-top: 24px;
+    max-width: 700px;
+    text-align: center;
+}
+
+.custom-img {
+    max-height: 400px;
+    max-width: 400px;
+    width: auto;
+    height: auto;
+    padding: 4px;
+}
+
+/* Styles for tile merge game */
+
+#game-container * {
+    box-sizing: content-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#game-container .score {
+    margin: 60px auto 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+#game-container #board {
+    margin: 12px auto 0;
+    width: 400px;
+    height: 400px;
+
+    background-color: var(--empty-tile);
+    border: 6px solid var(--board-outline);
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#game-container .tile {
+    width: 90px;
+    height: 90px;
+    border: 5px solid var(--board-outline);
+
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-container .x2 {
+    background-color: var(--x2);
+    color: var(--dark-tile-text);
+}
+
+#game-container .x4 {
+    background-color: var(--x4);
+    color: var(--dark-tile-text);
+}
+
+#game-container .x8 {
+    background-color: var(--x8);
+    color: var(--light-tile-text);
+}
+
+#game-container .x16 {
+    background-color: var(--x16);
+    color: var(--light-tile-text);
+}
+
+#game-container .x32 {
+    background-color: var(--x32);
+    color: var(--light-tile-text);
+}
+
+#game-container .x64 {
+    background-color: var(--x64);
+    color: var(--light-tile-text);
+}
+
+#game-container .x128 {
+    background-color: var(--x128);
+    color: var(--light-tile-text);
+}
+
+#game-container .x256 {
+    background-color: var(--x256);
+    color: var(--light-tile-text);
+}
+
+#game-container .x512 {
+    background-color: var(--x512);
+    color: var(--light-tile-text);
+}
+
+#game-container .x1024 {
+    background-color: var(--x1024);
+    color: var(--light-tile-text);
+    font-size: 28px;
+}
+
+#game-container .x2048 {
+    background-color: var(--x2048);
+    color: var(--light-tile-text);
+    font-size: 28px;
+}
+
+#game-container .x4096 {
+    background-color: var(--x4096);
+    color: var(--light-tile-text);
+    font-size: 28px;
+}
+
+#game-container .x8192 {
+    background-color: var(--x8192);
+    color: var(--light-tile-text);
+    font-size: 28px;
 }

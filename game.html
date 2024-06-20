@@ -19,11 +19,11 @@
         <title>ドゥーマー | hopeful doomer</title>
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="images/shinji.ico">
+        <!-- Javascript -->
+        <script src="game.js"></script>
     </head>
 
     <body>
-
-
 
 
 
@@ -44,30 +44,20 @@
 
 
 
-
         <!-- Divider -->
         <hr class="custom-hr">
 
 
         <!-- Title -->
-        <div class="container mt-4">
+        <div class="mt-4">
             <h1 class="text-center">ホープフル・ドゥーマー</h1>
         </div>
 
-        <!-- Images -->
-        <div class="container mx-auto gallery">
-            <a href="images/gallery/buttercream-strat.jpg" class="img-link" target="_blank">
-                <img src="images/gallery/thumbnails/buttercream-strat-thumbnail.png" class="img-fluid custom-img" alt="buttercream strat" title="buttercream strat">
-            </a>
 
-            <a href="images/gallery/blacktop-j-bass.jpg" class="img-link" target="_blank">
-                <img src="images/gallery/thumbnails/blacktop-j-bass-thumbnail.png" class="img-fluid custom-img" alt="j bass" title="j bass">
-            </a>
-
-            <a href="images/gallery/blue-lp.jpg" class="img-link" target="_blank">
-                <img src="images/gallery/thumbnails/blue-lp-thumbnail.png" class="img-fluid custom-img" alt="blue lp" title="blue lp">
-            </a>
-
+        <!-- Game -->
+        <div id="game-container">
+            <h2 class="score">Score: <span id="score">0</span></h2>
+            <div id="board"></div>
         </div>
 
 
@@ -83,10 +73,6 @@
                 </div>
             </div>
         </footer>
-
-
-
-
 
 
     </body>
